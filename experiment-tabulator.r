@@ -39,7 +39,7 @@ rm(list = ls())
 ## you can handle these mixed designs by separating them with a "+" symbol,
 ## e.g., 2(drugA)(1mg/kg, 3mg/kg) + 3(DrugB)(10mg/kg, 100mg/kg)
 
-s <- "2(Untreated) + (L2K; RNAiMAX)(5) + 2(pIC)(5) + 2(pIC; 3hpRNA)(2, 5)(L2K, RNAiMAX)"
+s <- "(Control; TreatmentA; TreatmentB)(0; 1mg/kg, 3mg/kg; 10mg/kg, 100mg/kg)"
 
 subexpts <- unlist(strsplit(s, split = "\\+"))
 
