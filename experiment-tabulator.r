@@ -16,6 +16,9 @@ rm(list = ls())
 ## Replace NA empty indices with NULL or 0
 ##
 ## Fix the column names (currently starts at Var2...)
+##
+## Account for the case (A; B; C)(a; b1, b2), i.e., when we want b1, b2 to
+## be applied B and C as they would in the case (B; C)(b1, b2). 
 
 # Prompt
 ##
