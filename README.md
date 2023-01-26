@@ -1,5 +1,5 @@
 # experiment-tabulator
-Small script that takes a concise syntax explaining your experimental design and turns it into a full experimental metadata table.
+Small script that takes a concise syntax explaining your experimental design and turns it into a "[tidy](https://r4ds.had.co.nz/tidy-data.html)" experimental metadata table.
 
 For example, the prompt
 
@@ -75,3 +75,5 @@ becomes
 |TreatmentB |100mg/kg |injection |
 |TreatmentB |100mg/kg |injection |
 |TreatmentB |100mg/kg |injection |
+
+At the moment, the first column starts from "Var2" as an artifact of using expand.grid under the hood.
